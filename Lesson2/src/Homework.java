@@ -16,10 +16,10 @@ public class Homework {
      * 2. (optional) if sum of a and b is more then int can store -- return -1;
      **/
     public static int sum(int a, int b) {
-        if (((long) a + b) > Integer.MAX_VALUE)
+        if ((long) a + b > Integer.MAX_VALUE)
             return -1;
         else
-            return (a + b);
+            return a + b;
     }
 
     /**
@@ -50,12 +50,12 @@ public class Homework {
     public static double average(int[] array) {
         int arrayLength = array.length;
         int i = 0;
-        int SumOfArray = 0;
+        int sumOfArray = 0;
         while (i < arrayLength) {
-            SumOfArray = SumOfArray + array[i];
+            sumOfArray = sumOfArray + array[i];
             i++;
         }
-        return (double) SumOfArray / i;
+        return (double) sumOfArray / i;
     }
 
     /**
