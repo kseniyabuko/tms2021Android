@@ -39,11 +39,11 @@ public class HomeworkLesson3 {
      * - if remainder of the division number by both 3 and 5 is zero 0  and - print "foobar" (example of number - 15)
      */
     public static void foobar(int number) {
-        if (((double) number % 3 == 0) && ((double) number % 5 == 0)) {
+        if ((number % 3 == 0) && (number % 5 == 0)) {
             System.out.println("foobar");
-        } else if ((double) number % 3 == 0) {
+        } else if (number % 3 == 0) {
             System.out.println("foo");
-        } else if ((double) number % 5 == 0) {
+        } else if (number % 5 == 0) {
             System.out.println("bar");
         } else {
             System.out.println("N/A");
