@@ -1,10 +1,5 @@
 package com.home;
 
-import com.home.model.CivilAirTransport;
-import com.home.model.FreightLandTransport;
-import com.home.model.LightLandTransport;
-import com.home.model.MilitaryAirTransport;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -31,9 +26,10 @@ public class Main {
         MilitaryAirTransport f22 = new MilitaryAirTransport(12000, 1500, 33500, "Lockheed", 32, 1200, true, 10);
         f22.info();
         f22.eject();
-        while (f22.getNumberOfRockets() >= 0) {
+        while (f22.getNumberOfRockets() > 0) {
             f22.shoot();
         }
+        f22.shoot();
     }
 }
 

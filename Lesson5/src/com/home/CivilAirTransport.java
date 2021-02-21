@@ -1,4 +1,4 @@
-package com.home.model;
+package com.home;
 
 public class CivilAirTransport extends AirTransport {
 

@@ -1,6 +1,6 @@
-package com.home.model;
+package com.home;
 
-public class AirTransport extends Transport{
+public class AirTransport extends Transport {
 
     private int wingsPan;
     private int minimumRunwayLength;
@@ -11,7 +11,7 @@ public class AirTransport extends Transport{
         this.minimumRunwayLength = minimumRunwayLength;
     }
 
-    public void info (){
+    public void info() {
         super.info();
         System.out.print(" , размах крыльев: " + this.wingsPan + ", минимальная длина полосы: " + this.minimumRunwayLength);
     }

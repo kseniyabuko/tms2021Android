@@ -1,4 +1,4 @@
-package com.home.model;
+package com.home;
 
 public class LandTransport extends Transport {
 
@@ -11,7 +11,7 @@ public class LandTransport extends Transport {
         this.fuelConsumption = fuelConsumption;
     }
 
-    public void info (){
+    public void info() {
         super.info();
         System.out.print(", количество колес: " + this.numberOfWheels + ", расход топлива: " + this.fuelConsumption);
     }
