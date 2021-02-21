@@ -1,4 +1,4 @@
-package com.home.model;
+package com.home;
 
 public class LightLandTransport extends LandTransport {
 
@@ -11,9 +11,10 @@ public class LightLandTransport extends LandTransport {
         this.numberOfPassengers = numberOfPassengers;
     }
 
-    public void info (){
+    public void info() {
         super.info();
-        System.out.println(", тип кузова: " + this.bodyType + ", количество пассажиров: " + this.numberOfPassengers );
+        System.out.println(", тип кузова: " + this.bodyType + ", количество пассажиров: " +
+                this.numberOfPassengers);
     }
 
 
@@ -36,7 +37,9 @@ public class LightLandTransport extends LandTransport {
     public void calculateTrip(double timeOfTrip) {
         double distanceKm = timeOfTrip * getMaximumSpeed();
         double tripFuelConsumption = calculateTripFuelConsumption(distanceKm);
-        System.out.println("За время " + timeOfTrip + " ч." + " автомобиль " + getBrand() + ", двигаясь с максимальной скоростью " + getMaximumSpeed() + " км/ч проедет " + distanceKm + " км и израсходует " + tripFuelConsumption + " литров топлива");
+        System.out.println("За время " + timeOfTrip + " ч." + " автомобиль " + getBrand() +
+                ", двигаясь с максимальной скоростью " + getMaximumSpeed() + " км/ч проедет " +
+                distanceKm + " км и израсходует " + tripFuelConsumption + " литров топлива");
     }
 
     private double calculateTripFuelConsumption(double distanceKm) {

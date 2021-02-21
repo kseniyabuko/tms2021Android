@@ -1,4 +1,4 @@
-package com.home.model;
+package com.home;
 
 public class FreightLandTransport extends LandTransport {
 
@@ -9,7 +9,7 @@ public class FreightLandTransport extends LandTransport {
         this.cargoCapacity = cargoCapacity;
     }
 
-    public void info (){
+    public void info() {
         super.info();
         System.out.println(", грузоподъемность: " + this.cargoCapacity);
     }

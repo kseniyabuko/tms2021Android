@@ -1,6 +1,4 @@
-package com.home.model;
-
-import java.net.Socket;
+package com.home;
 
 public class MilitaryAirTransport extends AirTransport {
 
@@ -12,6 +10,7 @@ public class MilitaryAirTransport extends AirTransport {
         this.hasCatapult = hasCatapult;
         this.numberOfRockets = numberOfRockets;
     }
+
     public void info() {
         super.info();
         System.out.println(", наличие системы катапультирования: " + this.hasCatapult + ", количество ракет на борту: " + this.numberOfRockets);
@@ -28,10 +27,11 @@ public class MilitaryAirTransport extends AirTransport {
     public void shoot() {
         if (this.numberOfRockets > 0) {
             System.out.println("Ракета пошла");
+            this.numberOfRockets--;
         } else {
             System.out.println("Боеприпасы отсутствуют");
         }
-        this.numberOfRockets--;
+
     }
 
     public boolean isHasCatapult() {

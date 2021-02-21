@@ -1,4 +1,4 @@
-package com.home.model;
+package com.home;
 
 public class Transport {
 
@@ -17,7 +17,7 @@ public class Transport {
         this.brand = brand;
     }
 
-    public void info (){
+    public void info() {
         System.out.print("Характеристики: мощность: " + this.horsePower + ", максимальная скорость: " + this.maximumSpeed + ", масса: " + this.weight + ", марка: " + this.brand);
     }
 
